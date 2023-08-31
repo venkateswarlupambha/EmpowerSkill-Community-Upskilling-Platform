@@ -66,7 +66,7 @@ SkillSwap is a 🕸️ platform that facilitates the exchange of skills and know
 ## Contact Support:
 ![contact](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/92dd4e56-7a32-447c-a619-f0d455e8fd3f)
 
-## Database (User Data Stored)
+## Database (User Data Stored):
 ![db](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/5abb53d5-47cd-4631-9776-9972480c5616)
 
 
