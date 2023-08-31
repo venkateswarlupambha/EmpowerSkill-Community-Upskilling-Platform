@@ -1,0 +1,149 @@
+body {
+    display: block;
+    background-color: rgba(125, 184, 235, 0.989);
+    font-family: Verdana;
+    color: aliceblue;
+     
+}
+
+
+form  {
+    text-align: left;
+    width: 300px;
+    display: inline-block;
+    background-color:transparent;
+    color: rgba(6, 6, 59) ;
+    margin:30px ;
+    padding: 40px;
+    border: solid;
+    border-color: rgb(142, 151, 171);
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px
+} 
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.form-bg {
+    text-align: center;
+    background-image: linear-gradient(to right bottom, #58e2ea, #00d0ff, #26b3ff, #ac86ff, #f63bc5);;
+    width: 100%;
+}
+/*.login-button {
+    border-color: rgb(9, 9, 9);
+    width: 100px;
+    height: 30px;
+    color: black;
+    border-width: 1px;
+    border-radius: 6px;
+    background-color: skyblue;
+}
+*/
+
+.login-image {
+    width: 100%;
+}
+
+.login-page-bg {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+.login-page-heading {
+    font-family: caveat;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 5px;
+    color: black;
+}
+
+.side-headings {
+    color: #17587C;
+    font-family: Times New Roman;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.side-heading {
+    color: #7E98A5;
+    font-family: Times New Roman;
+}
+
+/* Login Page Code */
+.main-login-page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, #eeaeca, #94bbe9);
+}
+
+.display-message {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+.login-container {
+    width:400px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-heading {
+    color: #333;
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+}
+
+.login-button {
+    padding: 7px 30px;
+    background-color: #3498db;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.register-login-heading {
+    color: #5d5a63;
+    font-family: roboto;
+    font-size: 16px;
+    margin-top: 12px;
+}

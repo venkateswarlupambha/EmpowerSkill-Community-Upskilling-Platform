@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile</title>
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/db9r5kzvb/image/upload/v1692369756/Screenshot_2023-08-18_201112_whhen6.png">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+        * {
+            list-style: none;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        body {
+            background-image: radial-gradient(circle, #ddee66, #ffc055, #ff9272, #ff729d, #c96cc2);
+        }
+
+        .wrapper .sidebar {
+            background-image: linear-gradient(to bottom, #c86bd1, #c576d8, #c280dd, #c089e3, #be92e7, #d58ede, #e88bd2, #f88ac4, #ff8596, #ff9165, #e8a63c, #b5bb2e);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            padding: 20px 0;
+            transition: all 0.5s ease;
+        }
+
+        .wrapper .sidebar .profile {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .wrapper .sidebar .profile img {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .wrapper .sidebar .profile h3 {
+            color: #ffffff;
+            margin: 10px 0 5px;
+        }
+
+        .wrapper .sidebar .profile p {
+            color: rgb(206, 240, 253);
+            font-size: 14px;
+        }
+
+        .wrapper .sidebar ul li a {
+            display: block;
+            padding: 13px 30px;
+            border-bottom: 1px solid #10558d;
+            color: rgb(241, 237, 237);
+            font-size: 16px;
+            position: relative;
+        }
+
+        .wrapper .sidebar ul li a .icon {
+            color: #dee4ec;
+            width: 30px;
+            display: inline-block;
+        }
+
+        .wrapper .sidebar ul li a:hover,
+        .wrapper .sidebar ul li a.active {
+            color: #0c7db1;
+
+            background: white;
+            border-right: 2px solid rgb(5, 68, 104);
+        }
+
+        .wrapper .sidebar ul li a:hover .icon,
+        .wrapper .sidebar ul li a.active .icon {
+            color: #0c7db1;
+        }
+
+        .wrapper .sidebar ul li a:hover:before,
+        .wrapper .sidebar ul li a.active:before {
+            display: block;
+        }
+
+        .wrapper .main_content {
+            margin-left: 20%;
+        }
+
+        table {
+            width: 80%;
+            border: 1px solid black;
+            margin-top: 10%;
+            text-align: center;
+        }
+
+        td,
+        th {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        btn-primary {
+            height: 2px;
+            width: 2px;
+        }
+
+        marks {
+            width: 10px;
+            height: 2px;
+        }
+
+        input[type=text] {
+            width: 50%;
+            padding: 12px 20px;
+            margin-top: 15px;
+            box-sizing: border-box;
+            border: 2px solid #555;
+            border-radius: 5px;
+
+        }
+
+        input[type=email] {
+            width: 50%;
+            padding: 12px 20px;
+            margin-top: 15px;
+            box-sizing: border-box;
+            border: 2px solid #555;
+            border-radius: 5px;
+        }
+
+        .user-profile-style {
+            padding: 20px;
+            font-family: "roboto";
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        select {
+            width: 50%;
+            padding: 12px 20px;
+            margin-top: 15px;
+            box-sizing: border-box;
+            border: 2px solid #555;
+            border-radius: 5px;
+        }
+
+        label {
+            margin: 10px 0;
+        }
+
+        .assignment-heading {
+            padding-top: 25px;
+            font-family: roboto;
+            font-weight: bold;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Top menu -->
+        <div class="sidebar">
+            <!--profile image & text-->
+            <div class="profile">
+                <img src="https://as2.ftcdn.net/v2/jpg/02/10/70/13/1000_F_210701394_juARL2AoYEzgYZWI5zHmcGXmqWwQS8L2.jpg" alt="profile_picture" />
+                <h3>{{ name }} </h3>
+                <p>{{role}}</p>
+            </div>
+            <!--menu item-->
+            <button class="toggle-sidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul>
+                <li>
+                    <a href="/studentprofile" class="active">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#assignment">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">Assignment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item"><a href="{{url_for('portal')}}">dashboard</a></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main_content">
+            <h2 class="user-profile-style"> Your Profile</h2>
+            <table>
+                <tr> 
+                  <td> Name </td>
+                  <td> {{ name }} </td>
+                </tr>
+                <tr> 
+                  <td> Email </td>
+                  <td> {{ email }} </td>
+                </tr>
+                <tr> 
+                  <td> Contact </td>
+                  <td> {{ contact }} </td>
+                </tr>
+                <tr> 
+                  <td> Address </td>
+                  <td> {{ address }} </td>
+                </tr>
+                <tr> 
+                  <td> Role </td>
+                  <td> {{ role }} </td>
+                </tr>
+                <tr> 
+                  <td> Branch </td>
+                  <td> {{ branch }} </td>
+                </tr>
+              </table>
+            <div class="assignment-section" id="assignment">
+                <h2 class="assignment-heading">Assignment Submission</h2>
+                <form id="assignmentForm">
+                    <div class="pb-3">
+                        <label for="assignmentTitle">Assignment Title:</label>
+                        <input type="text" id="assignmentTitle" name="assignmentTitle" required>
+                    </div><br />
+                    <div class="pb-3">
+                        <label for="assignmentFile">Upload Assignment:</label>
+                        <input type="file" id="assignmentFile" name="assignmentFile" required>
+                    </div><br />
+                    <div class="mb-5">
+                        <button type="submit">Submit Assignment</button>
+                    </div>
+                </form>
+                <div class="submitted-files" id="submittedFiles">
+                    <!-- Display submitted files here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+        const toggleSidebar = document.querySelector('.toggle-sidebar');
+
+        toggleSidebar.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        const assignmentForm = document.getElementById('assignmentForm');
+        const submittedFiles = document.getElementById('submittedFiles');
+
+        assignmentForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            // Simulating a submitted file
+            const assignmentTitle = document.getElementById('assignmentTitle').value;
+            const submittedFile = document.getElementById('assignmentFile').value;
+
+            if (assignmentTitle && submittedFile) {
+                const submissionItem = document.createElement('div');
+                submissionItem.className = 'submission-item';
+                submissionItem.innerHTML = `
+                    <h3>${assignmentTitle}</h3>
+                    <p>${submittedFile}</p>
+                `;
+
+                submittedFiles.appendChild(submissionItem);
+                assignmentForm.reset();
+                alert('Assignment submitted successfully!');
+            } else {
+                alert('Please fill out all fields before submitting.');
+            }
+        });
+    </script>
+</body>
+
+</html>

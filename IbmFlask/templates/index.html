@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylessheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap</title>
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/db9r5kzvb/image/upload/v1692369756/Screenshot_2023-08-18_201112_whhen6.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand nav-logo-title">SkillSwap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item nav-items-description"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item nav-items-description"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item nav-items-description"><a class="nav-link" href="#services">Our Services</a></li>
+                    <li class="nav-item nav-items-description"><a class="nav-link" href="#partner">Our Partners</a></li>
+                    <li class="nav-item nav-items-description"><a class="nav-link" href="#circulam">Circulam</a></li>
+                    <li class="nav-item nav-items-description"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+                <a class="nav-item nav-link nav-items-login-button" href="{{url_for('login1')}}">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page Section -->
+    <section id="home" class="home-section text-center">
+        <div class="background-image"></div>
+        <div class="container">
+            <h1 class="home-section-heading">Welcome to SkillSwap</h1>
+            <p class="home-section-paragraph">Exchange Skills and Knowledge within Your Community</p>
+            <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section text-center">
+        <div class="container text-center">
+            <h2 class="about-heading">About Us</h2>
+            <p class="about-description">SkillSwap is a community-driven web platform that empowers individuals to exchange skills and knowledge. It connects users with complementary expertise, fostering collaborative learning in a vibrant environment.</p>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services-section text-center">
+        <div class="container">
+            <h2 class="about-heading">Our Services</h2>
+            <div class="row">
+                <!-- Sample cards -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/free-vector/online-tutorials-concept_52683-37480.jpg?size=626&" class="card-img-top" alt="Service Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Courses and Lessons</h3>
+                            <a href="#" class="btn btn-orange">Learn More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/free-vector/online-tutorials-concept_52683-37481.jpg?size=626&" class="card-img-top" alt="Service Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Live Classes and Webinars</h3>
+                            <a href="#" class="btn btn-orange">Learn More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/free-vector/employees-with-laptops-learning-professional-trainig-internal-education-employee-education-professional-development-program-concept_335657-806.jpg?size=626&" class="card-img-top" alt="Service Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Lifelong Learning and Upskilling</h3>
+                            <a href="#" class="btn btn-orange">Learn More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards with similar structure -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Clients Section -->
+    <section id="partner" class="clients-section text-center">
+        <h2 class="about-heading">Our Partners</h2>
+        <div class="clients-container">
+            <div class="clients-list">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaI2NJypkYQTC_J-ntzqt8AbXH9nqEdb2ljA&" alt="Client 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfo1g-pyHbY7fZdnxKMNqeYItybCoW5DYxrw&" alt="Client 2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7alL-nhGRj-YMSfWUeADaSfSduV8nEi2HZQ&" alt="Client 3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9cSP40D_buq5MLvJkJufkkJV3tRqudouBg&" alt="Client 4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHiYIW8Z78L8MKIud0C4qE8FoFu5dFcjl1ug&" alt="Client 5">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbHZ8-3C7PyuoDnbbqXNVieMMlqXYCkN9Yfg&" alt="Client 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- our circulam -->
+    <section id="circulam" class="clients-section circulam-bg-container text-center">
+        <h2 class="about-heading">Our Circulam</h2>
+        <div class="clients-container">
+            <div class="clients-list">
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">FullStack Development</h3>
+                        <p class="circulam-description">Roadmap</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">Front-end Basics</h3>
+                        <p class="circulam-description">HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">Front-end Frameworks</h3>
+                        <p class="circulam-description">React, Angular, Vue</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">Back-end Technologies</h3>
+                        <p class="circulam-description">Node.js, Python, Java</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">Database Management</h3>
+                        <p class="circulam-description">SQL, NoSQL, MongoDB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clients-container">
+            <div class="clients-list">
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">AI/ML Curriculum</h3>
+                        <p class="circulam-description">Learn the essentials of AI/ML.</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">Introduction to AI</h3>
+                        <p class="circulam-description">Overview of AI concepts<br /> and applications.</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">ML Fundamentals</h3>
+                        <p class="circulam-description">basics of machine learning <br />algorithms.</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">Supervised Learning</h3>
+                        <p class="circulam-description">Explore supervised <br />learning techniques.</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">Unsupervised Learning</h3>
+                        <p class="circulam-description">Dive into unsupervised <br />learning and clustering<br /> methods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clients-container">
+            <div class="clients-list">
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">Data Science Curriculum</h3>
+                        <p class="circulam-description">Explore Data Science <br />and applications.</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">Introduction to DS</h3>
+                        <p class="circulam-description">Overview of data analysis, <br />visualization, and <br />exploration.</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">Advanced Data Analysis</h3>
+                        <p class="circulam-description">Dive deeper into statistical<br /> analysis and modeling <br />techniques.</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">ML for Data Science</h3>
+                        <p class="circulam-description">Learn how to apply <br />machine learning algorithms<br /> to real-world data.</p>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="milestone">
+                    <div class="circulam-card circulam">
+                        <h3 class="circulam-heading">Big Data Processing</h3>
+                        <p class="circulam-description">Explore techniques for <br />handling and analyzing <br />large datasets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section text-center">
+        <div class="container">
+            <h2 class="about-heading">Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+            <p id="response-message"></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section text-center">
+        <div class="container">
+            <div class="social-icons">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+
+            <p class="mt-2" style="color:white;">&copy; IBM HACKATHON 2023 Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your custom JavaScript file -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    const responseMessage = document.getElementById('response-message');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Simulate form submission with a delay
+        setTimeout(function() {
+            responseMessage.textContent = 'Thank you for your message!';
+            contactForm.reset();
+        }, 1000); // 1000 milliseconds = 1 second
+    });
+});
+    </script>
+</body>
+
+</html>

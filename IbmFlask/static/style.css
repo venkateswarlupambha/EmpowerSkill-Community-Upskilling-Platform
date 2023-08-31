@@ -1,0 +1,245 @@
+/* Navbar */
+.navbar {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.nav-logo-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.nav-items-description {
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.nav-items-description:hover {
+    font-family: roboto;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px;
+}
+
+.nav-items-login-button {
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.nav-items-login-button:hover {
+    font-family: roboto;
+    font-weight: bold;
+    text-decoration: overline;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px;
+}
+
+.navbar.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Home Page */
+.home-section {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    background-image: url('https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/programming%20evolution.jpg?itok=WTj9-yNz');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-section-heading {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: roboto;
+}
+
+.home-section-paragraph {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: roboto;
+    color: #ACECFC;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 80px 0;
+    background: rgb(2, 0, 36);
+    background-image: linear-gradient(to bottom, #4f8eec, #63a2f0, #7cb6f2, #99c8f3, #b8daf4);
+}
+
+.about-description {
+    font-size: 24px;
+    font-family: "roboto";
+    color: grey;
+}
+
+.about-heading {
+    font-size: 46px;
+    font-family: Times New Roman;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+/* Services Section */
+.services-section {
+    padding: 80px 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(172, 212, 231, 1) 0%, rgba(242, 245, 255, 1) 62%);
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
+.btn-orange {
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+}
+
+/* Clients Section */
+.clients-section {
+    padding: 80px 0;
+    font-family: Arial, sans-serif;
+}
+
+.clients-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 20px;
+}
+
+.clients-list {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.clients-list img {
+    max-height: 100px;
+}
+
+/* circulam */
+.circulam-bg-container {
+    padding: 80px 0;
+    background-image: linear-gradient(to right top, #73cfdc, #8fd1f2, #b7d0fb, #dcd0f8, #f7d2ee);
+}
+
+.circulam-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.circulam-description {
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-family: roboto;
+}
+
+.milestone {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.circulam-card {
+    width: 250px;
+    padding: 20px;
+    background-image: linear-gradient(to right top, #eaffff, #dbf6f9, #ccedf4, #bfe4f0, #b2dbec);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 30px;
+    /* Add spacing between cards */
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    border: 1px solid #3498db;
+    border-width: 0 1px 1px 0;
+    transform: rotate(-45deg);
+}
+
+.milestone:last-child .arrow {
+    display: none;
+}
+
+/* Circulam Section Styles */
+.circulam {
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.circulam:hover {
+    background-image: linear-gradient(to right top, #f9cad9, #ffcdc9, #ffd4ba, #fbdfb0, #e5ecb2);
+    color: #ffffff;
+
+}
+
+/* Contact Us Section */
+.contact-section {
+    padding: 80px 0;
+    background-image: linear-gradient(to right bottom, #73cfdc, #8fd1f2, #b7d0fb, #dcd0f8, #f7d2ee);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#response-message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Footer Section */
+.footer-section {
+    padding: 40px 0;
+    background-image: linear-gradient(to right bottom, #4a4d4d, #4d5151, #505454, #545858, #575c5c);
+}
+
+.social-icons a {
+    font-size: 26px;
+    margin: 0 10px;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}

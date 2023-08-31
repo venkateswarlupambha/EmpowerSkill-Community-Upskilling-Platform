@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+
+        
+        <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+     </head>
+    <body>
+        <h2>Please enter your details to register yourself</h2>
+    
+        <form id="form" method="post" action="{{ url_for('login') }}">
+
+            <div class="form-control">
+                <label for="email">Email</label><br>
+                <input type="text" name="email" id="email" placeholder="Enter your Email id"><br>
+            </div>
+
+            
+            <div class="form-control">
+                <label for="pwd">Password</label><br>
+                <input type="password" name="pwd"  id="pwd" placeholder="Please set your password"><br>
+            </div>
+
+            <div class="form-control">
+                <button type="submit" class="btn btn-success login-button">Login</button>
+            </div>
+
+           <P> Don't Have Account : <a href="{{url_for('reges')}}">Register</a> </P>
+        </form>
+        
+        <h2>{{msg}}</h2>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+    <title>Login Page</title>
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/db9r5kzvb/image/upload/v1692369756/Screenshot_2023-08-18_201112_whhen6.png">
+</head>
+
+<body>
+    <div class="login-page-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Content and Image Section -->
+                <div class="col-md-6 content-section">
+                    <img src="https://img.freepik.com/premium-vector/graduate-achievement-university-learning-education-vector-illustration_199064-362.jpg?size=626&" class="login-image" alt="Image">
+                    <h4 class="login-page-heading">EmpowerSkill: Community Upskilling Platform</h4>
+                    <ul>
+                        <li class="side-heading"><span class="side-headings">User Profiles:</span>Show off skills and interests through personalized profiles.</li>
+                        <li class="side-heading"><span class="side-headings">Skill Listings:</span> Create searchable databases of offered and desired skills.</li>
+                        <li class="side-heading"><span class="side-headings">Skill Matching and Messaging:</span> Connect users with relevant skill exchange partners.</li>
+                        <li class="side-heading"><span class="side-headings">Skill Exchange Sessions:</span> Facilitate in-person or virtual skill-sharing meetups.</li>
+                        <li class="side-heading"><span class="side-headings">Reviews and Ratings:</span> Build trust with feedback and quality ratings.</li>
+                        <li class="side-heading"><span class="side-headings">Community Forums and Events:</span> Engage in discussions and discover local workshops.</li>
+                        <li class="side-heading"><span class="side-headings">Skill Badges and Achievements:</span> Motivate users with achievement rewards.</li>
+                        <li class="side-heading"><span class="side-headings">Skill Resources:</span> Access tutorials and materials for skill improvement.</li>
+                    </ul>
+                </div>
+
+                <!-- Login Form Section -->
+                <div class="col-md-6 main-login-page">
+                    <div class="login-container">
+                        <h2 class="login-heading">Login</h2>
+                        <form id="form" method="post" action="{{ url_for('login') }}">
+
+                            <div class="">
+                                <label for="email">Email</label><br>
+                                <input type="text" name="email" id="email" placeholder="Enter your Email id"><br>
+                            </div>
+                
+                            
+                            <div class="">
+                                <label for="pwd">Password</label><br>
+                                <input type="password" name="pwd"  id="pwd" placeholder="Please set your password"><br>
+                            </div>
+                
+                            <div class="mt-2">
+                                <button type="submit" class="btn btn-success login-button">Login</button>
+                            </div>
+                
+                           <P class="mt-2"> Don't Have Account : <a href="{{url_for('reges')}}">Register</a> </P>
+                        </form>
+                        <!-- form end -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+
+</html>

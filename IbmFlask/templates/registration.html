@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+
+        <!-- Main CSS File -->
+        <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+     </head>
+    <body>
+        <h2 style="margin-top: 50px; text-align: center;" >Please enter your details to register yourself</h2>
+        <!-- form begins -->
+        <div class="form-bg">
+        <form id="form" action="{{ url_for('register')}}" method="post">
+            <div class="form-control">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label><br>
+                <input type="text" name="email" id="email" placeholder="Enter your Email id"><br>
+            </div>
+
+            <div class="form-control">
+                <label for="mobile">Contact</label><br>
+                <input type="text" name="mobile" id="mobile" placeholder="Enter your mobile number"><br>
+            </div>
+
+            <div class="form-control">
+                <label for="address">Address</label><br>
+                <textarea name="address" id="address" ></textarea>
+            </div>
+
+            <div class="form-control">
+                <label for="role">Role</label><br>
+                <select id="role" name="role">
+                    <option value="0">Faculty</option>
+                    <option value="1">Student</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="branch">Branch</label><br>
+                <select id="branch" name="branch">
+                    <option value="ECE">ECE</option>
+                    <option value="ME">ME</option>
+                    <option value="EEE">EEE</option>
+                    <option value="CE">CE</option>
+                    <option value="CSE">CSE</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="pwd">Password</label><br>
+                <input type="password" name="pwd" id="pwd" placeholder="Please set your password"><br>
+            </div>
+
+            <div class="form-control">
+                <button type="submit" class="btn btn-success login-button">Submit</button>
+            </div>
+            <div>
+                <p> Already Registered? <a href=" {{url_for('login1')}}">Login Here</a></p>
+                
+            </div>
+
+
+        </form>
+    </div>
+        <!-- form end -->
+        <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "451fb165-e237-4c91-b0f4-f05f828ea75d", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "1507e665-7001-40ba-b682-f9871b04180f", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+    </body>
+</html> 
