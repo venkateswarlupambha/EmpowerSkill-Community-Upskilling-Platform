@@ -39,11 +39,36 @@ SkillSwap is a 🕸️ platform that facilitates the exchange of skills and know
 
 ### Project Screenshots:
 
-![User Profiles](/images/user_profiles.png)
-_User Profiles section showcasing users' skills and interests._
+## Home Page:
+![home page](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/fac17b34-e459-435c-b797-81b5d70c9bc5)
 
-![Skill Matching](/images/skill_matching.png)
-_Skill Matching and Messaging section helping users connect._
+## Login Page:
+![login](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/959c85ec-1c00-4d60-9069-b324c8a1f17d)
+
+## Registration Page:
+![register](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/41000919-ba26-49cd-b036-2c7abaa9a4ba)
+
+## User Profile:
+![dashboard](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/3c1e56dc-d1d0-417c-a99b-f64107d61a42)
+
+## Courses:
+![courses](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/571fab70-c80e-40a1-944a-6032a43f068d)
+
+## My Discussions:
+![discussions](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/35a8c1ef-ba4a-4c90-b8ef-7f3745c15841)
+
+## Job Board:
+![jobboard](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/5a1f2cc9-bde5-425f-9fd1-69539bf44151)
+
+## Playground
+![playground](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/c4c51901-2df6-4f59-91db-577cd533b618)
+
+## Contact Support:
+![contact](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/92dd4e56-7a32-447c-a619-f0d455e8fd3f)
+
+## Database (User Data Stored)
+![db](https://github.com/venkateswarlupambha/EmpowerSkill-Community-Upskilling-Platform/assets/110820099/5abb53d5-47cd-4631-9776-9972480c5616)
+
 
 ### Installation:
 
