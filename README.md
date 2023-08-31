@@ -1,4 +1,4 @@
-# EmpowerSkill: Community Upskilling Platform
+﻿# SBSPS-Challenge-10091-EmpowerSkill: Community Upskilling Platform
 
 ## Category: IBM Cloud Application
 
@@ -10,6 +10,11 @@
 - IBM Cloud ☁️
 - GitHub 🐙
 - IBM Cloud Object Storage 📦
+
+## Open Source Softwares:
+- Docker
+- Red Hat
+- GitHub 🐙
 
 ## Project Description:
 
@@ -69,22 +74,32 @@ We deploy the SkillSwap application using Docker:
 1. Build the Docker image:
 
     ```bash
-   docker build -t skillswap-app .
+   docker build -t skill .
 
-3. Run the Docker container:
+2. Run the Docker container:
    
     ```bash
-   docker run -p 8080:80 skillswap-app
+   docker run -p 5000:5000 skill
+    
+ 3. For To Tag:
+   
+    ```bash
+      3.1 docker login
+      3.2 docker tag skill venkateswarlu2001/empowerskills
 
-5. Access the application in your browser at http://localhost:8080.
+ 4. To Push The Image
+
+       ```bash
+       docker push venkateswarlu2001/empowerskills
+
 
 ### Contribution:
 
-1. Fork the repository.
-2. Create a new branch: `git checkout -b`
-3. Make your changes and commit them: `git commit -m`
-4. Push to the branch: `git push origin`
-5. Create a pull request.
+1. repository
+2. Create a new branch
+3. Make your changes and commit them
+4. Push to the branch
+5. Create a pull request
 
 ## How EmpowerSkill Works as a Learning Platform:
 
