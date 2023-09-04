@@ -140,6 +140,23 @@ EmpowerSkill facilitates skill and knowledge exchange within a community:
 
 5. **Access Resources:** Repository for skill development.
 
+# About us
+   **We are the present students of Narasaraopet Engineering College pursuing final year Bachelor of Technology in the stream of Electronics and Communication Engineering.**
+ 
+## Team Name    :        **Skill Empire**
+ 
+## Team Members:
+ 
+- P. Venkateswarlu (Team Head)
+  (20471A04G1@nrtec.in)
+- F. Manikanta
+  (20471A0412@nrtec.in)
+- P. Praveen
+  (20471A0440@nrtec.in)
+- U. Harikrishna
+  (20471A0455@nrtec.in)
+
+
 ### Links:
 
 - [Credly Badge: Journey To Cloud:Envisioning Your Solution](https://www.credly.com/badges/6e1fc320-b9a7-49a9-8856-bc2d4cdb9394/public_url)
